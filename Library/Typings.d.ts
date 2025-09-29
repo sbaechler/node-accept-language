@@ -6,7 +6,7 @@ declare module 'accept-language' {
         /**
          * Define your supported languages. The first language will be your default language.
          */
-        languages(languages: readonly string[]): void;
+        languages(languages: readonly [string, ...string[]]): void;
 
         /**
          * Get matched language. If no match, the default language will be returned.
